@@ -16,7 +16,7 @@ read
 fi
 
 
-echo $liczba
+
 if [ "$plik" == "--logs" ]
 then
 	
@@ -28,7 +28,15 @@ then
 		echo $(date '+%Y-%m-%d') >> log$i.txt
 	done
 read
+fi
 
+if [ "$plik" == "--help" ]
+then
+	echo "Wszysktie dostepne flagi:"
+	echo "--date   pokazuje aktualna date"
+	echo "--logs   tworzy 100 plikow txt o nazwie logx"
+	echo "--logs <liczba>   tworzy wybrana ilosc plikow txt"
+	read
 fi 
 
 
