@@ -30,6 +30,12 @@ then
 read
 fi
 
+if [ "$arg1" == "--init" ]
+then
+	git clone https://github.com/danieldsw/narzedziaIT.git
+fi
+
+
 if [ "$arg1" == "--help" ] || [ "$arg1" == "-h" ];
 then
 	echo "Wszysktie dostepne flagi:"
