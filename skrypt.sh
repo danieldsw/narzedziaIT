@@ -1,5 +1,10 @@
 #!/bin/bash
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> skrypty4
 #test
 arg1=$1
 arg2=$2
@@ -22,6 +27,7 @@ then
 	
 	for (( i=1; i<=$arg2; i++ ))
 	do 
+<<<<<<< HEAD
 		mkdir log$i
 		
 		touch log$i/log$i.txt 
@@ -29,10 +35,17 @@ then
 		echo `basename "$0"` >> log$i/log$i.txt
 		echo $(date '+%Y-%m-%d') >> log$i/log$i.txt
 		
+=======
+		touch log$i.txt 
+		echo log$i.txt > log$i.txt
+		echo `basename "$0"` >> log$i.txt
+		echo $(date '+%Y-%m-%d') >> log$i.txt
+>>>>>>> skrypty4
 	done
 read
 fi
 
+<<<<<<< HEAD
 if [ "$arg1" == "--error" ] || [ "$arg1" == "-e" ];
 then
 	for (( i=1; i<=$arg2; i++ ))
@@ -53,6 +66,9 @@ then
 fi
 
 
+=======
+>>>>>>> 69d8e41d547d9714933bb036d439b1222d222724
+>>>>>>> skrypty4
 if [ "$arg1" == "--help" ] || [ "$arg1" == "-h" ];
 then
 	echo "Wszysktie dostepne flagi:"
