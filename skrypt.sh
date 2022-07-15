@@ -1,9 +1,13 @@
 #!/bin/bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> skrypty4
+=======
+
 >>>>>>> skrypty4
 #test
 arg1=$1
@@ -44,6 +48,7 @@ then
 	done
 read
 fi
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 if [ "$arg1" == "--error" ] || [ "$arg1" == "-e" ];
@@ -69,6 +74,11 @@ fi
 =======
 >>>>>>> 69d8e41d547d9714933bb036d439b1222d222724
 >>>>>>> skrypty4
+=======
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> skrypty4
 if [ "$arg1" == "--help" ] || [ "$arg1" == "-h" ];
 then
 	echo "Wszysktie dostepne flagi:"
@@ -77,6 +87,6 @@ then
 	echo "--logs <liczba>   tworzy wybrana ilosc plikow txt"
 	read
 fi 
-
+>>>>>>>
 
 
