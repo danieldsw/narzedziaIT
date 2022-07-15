@@ -6,6 +6,9 @@ plik=$1
 if [ "$plik" == "--date" ]
 then
 echo $(date '+%Y-%m-%d')
+read
+fi
+
 =======
 plik=$1
 
@@ -18,7 +21,7 @@ do
 	echo `basename "$0"` >> log$i.txt
 	echo $(date '+%Y-%m-%d') >> log$i.txt
 done
+read
 >>>>>>> skrypty2
 fi 
 
-read
