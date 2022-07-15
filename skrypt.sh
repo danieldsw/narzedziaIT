@@ -33,6 +33,20 @@ then
 read
 fi
 
+if [ "$arg1" == "--error" ] || [ "$arg1" == "-e" ];
+then
+	for (( i=1; i<=$arg2; i++ ))
+	do 
+		mkdir error$i
+		
+		touch error$i/error$i.txt 
+		echo error$i/error$i.txt > error$i/error$i.txt
+		echo `basename "$0"` >> error$i/error$i.txt
+		echo $(date '+%Y-%m-%d') >> error$i/error$i.txt
+		
+	done
+fi
+
 if [ "$arg1" == "--init" ]
 then
 	git clone https://github.com/danieldsw/narzedziaIT.git
