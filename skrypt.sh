@@ -1,4 +1,5 @@
 #!/bin/bash
+#test
 plik=$1
 
 if [ "$plik" == "--date" ]
