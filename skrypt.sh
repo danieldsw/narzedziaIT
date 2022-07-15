@@ -22,10 +22,13 @@ then
 	
 	for (( i=1; i<=$arg2; i++ ))
 	do 
-		touch log$i.txt 
-		echo log$i.txt > log$i.txt
-		echo `basename "$0"` >> log$i.txt
-		echo $(date '+%Y-%m-%d') >> log$i.txt
+		mkdir log$i
+		
+		touch log$i/log$i.txt 
+		echo log$i/log$i.txt > log$i/log$i.txt
+		echo `basename "$0"` >> log$i/log$i.txt
+		echo $(date '+%Y-%m-%d') >> log$i/log$i.txt
+		
 	done
 read
 fi
